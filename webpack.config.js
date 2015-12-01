@@ -14,7 +14,7 @@ module.exports = {
   module:{
   loaders:[
     {test:/\.css$/,loader:'style-loader!css-loader'},
-    {test: /\.scss$/,loaders: ['style', 'css', 'less']},
+    {test: /\.less$/,loaders: ['style', 'css', 'less']},
     {test:/\.js[x]?$/,exclude:/node_modules/,loader:'babel-loader',
     query: {
           optional: ['runtime']
